@@ -1,0 +1,27 @@
+.card {
+  color: white;
+  background-color: rgb(36, 34, 44);
+
+  height: 80px;
+  width: 50%;
+  margin-bottom: 16px;
+  
+  border-radius: 10px;
+  border: 3px solid rgba(58, 55, 70, 0.483);
+  
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-inline: 16px;
+
+  transition: .3s;
+}
+
+.card:hover {
+  border: 3px solid rgba(58, 55, 70, 0.271);
+  background-color: rgba(36, 34, 44, 0.833);
+}
+
+.card strong {
+  font-size: 18px;
+}

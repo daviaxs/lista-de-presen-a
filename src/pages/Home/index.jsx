@@ -6,7 +6,7 @@ import './style.css'
 
 
 export function Home() {
-  const [userName, setUserName] = useState()
+  const [userName, setUserName] = useState('')
   const [students, setStudents] = useState([])
   const [user, setUser] = useState({ name: '', avatar: '' })
 
@@ -40,6 +40,7 @@ export function Home() {
     };
 
     setStudents(prevState => [...prevState, newStudent])
+    setUserName('')
   }
 
   useEffect(() => {
@@ -71,6 +72,7 @@ export function Home() {
       <input 
       id='inputStudentsName'
       type="text" 
+      value={userName}
       placeholder='Digite o nome...'
       onChange={e => setUserName(e.target.value)}
       />
